@@ -2,6 +2,8 @@
 {
     public class ExchangeResults
     {
-        public ExchangeModel Rates { get; set; }
+        public ExchangeModel Status { get; set; }
+
+        public List<CryptoListings> Data { get; set; }
     }
 }

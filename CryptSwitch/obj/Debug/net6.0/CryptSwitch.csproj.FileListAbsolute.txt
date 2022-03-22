@@ -25,3 +25,6 @@ C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\obj\Debug\net6.0\CryptSwitch
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\obj\Debug\net6.0\ref\CryptSwitch.dll
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\obj\Debug\net6.0\CryptSwitch.pdb
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\obj\Debug\net6.0\CryptSwitch.genruntimeconfig.cache
+C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

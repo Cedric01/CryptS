@@ -1,5 +1,8 @@
+using AutoMapper;
 using CryptSwitch.ApiServices;
 using CryptSwitch.Builders;
+using CryptSwitch.DTO;
+using CryptSwitch.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CryptSwitch.Controllers
@@ -14,10 +17,12 @@ namespace CryptSwitch.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IMapper _mapper;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IMapper mapper)
         {
             _logger = logger;
+            _mapper = mapper;
             ApiHelper.InitialiseClient();
         }
 
@@ -39,7 +44,7 @@ namespace CryptSwitch.Controllers
             TradingModelBuilder modelBuilder = new TradingModelBuilder();
             var results = await modelBuilder.LoadExchangeRates();
 
-            return Ok(results);
+            return Ok(_mapper.Map<ExchangeResultsDTO>(results));
         }
     }
 }

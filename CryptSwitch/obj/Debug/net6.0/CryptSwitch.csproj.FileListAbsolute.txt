@@ -10,7 +10,6 @@ C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\bin\Debug\net6.0\Microsoft.O
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\obj\Debug\net6.0\CryptSwitch.csproj.AssemblyReference.cache
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\obj\Debug\net6.0\CryptSwitch.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\obj\Debug\net6.0\CryptSwitch.AssemblyInfoInputs.cache
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\obj\Debug\net6.0\CryptSwitch.AssemblyInfo.cs
@@ -28,3 +27,4 @@ C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\obj\Debug\net6.0\CryptSwitch
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\kehiy\source\repos\CryptSwitch\CryptSwitch\obj\Debug\net6.0\CryptSwitch.csproj.AssemblyReference.cache

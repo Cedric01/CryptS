@@ -19,11 +19,14 @@ namespace CryptSwitch.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly IMapper _mapper;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IMapper mapper)
+        private readonly ITradingModelBuilder _tradingModelBuiler;
+
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IMapper mapper, ITradingModelBuilder tradingModelBuiler)
         {
             _logger = logger;
             _mapper = mapper;
             ApiHelper.InitialiseClient();
+            _tradingModelBuiler = tradingModelBuiler;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
@@ -41,8 +44,8 @@ namespace CryptSwitch.Controllers
         [HttpGet("ExChangeRate")]
         public async Task<IActionResult> ExChangeRate()
         {
-            TradingModelBuilder modelBuilder = new TradingModelBuilder();
-            var results = await modelBuilder.LoadExchangeRates();
+            
+            var results = await _tradingModelBuiler.LoadExchangeRates();
 
             return Ok(_mapper.Map<ExchangeResultsDTO>(results));
         }

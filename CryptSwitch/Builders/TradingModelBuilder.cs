@@ -4,14 +4,13 @@ using Newtonsoft.Json;
 
 namespace CryptSwitch.Builders
 {
-    public class TradingModelBuilder
+    public class TradingModelBuilder : ITradingModelBuilder
     {
         
         public async Task<ExchangeResults> LoadExchangeRates()
         {
             const string url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest";
             
-
             using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync(url))
             {
                 if (response.IsSuccessStatusCode)
@@ -29,11 +28,10 @@ namespace CryptSwitch.Builders
                     }
                     catch (Exception ex)
                     {
-
+                        throw;
                     }
-                    //ExchangeResults results = await response.Content.ReadFromJsonAsync<ExchangeResults>();
 
-                    return null;
+                    
                 }
                 else
                 {
